@@ -5,9 +5,7 @@
 
 #define CLOCK_ID CLOCK_MONOTONIC_RAW
 
-uint8_t clz_iter(uint32_t x)
-{
-	int clz(uint32_t x) {
+int clz_iter(uint32_t x) {
     int n = 32, c = 16;
     do {
         uint32_t y = x >> c;
